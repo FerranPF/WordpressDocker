@@ -1,0 +1,15 @@
+/*
+Theme Name: Test Theme
+Author: Ferran
+Author URI: https://github.com/FerranPF
+Description: Sample theme for Docker setup.
+Version: 0.1
+*/
+
+div#post{
+    border: 1px solid black;
+    margin: 20px;
+    padding-left: 16px;
+    border-radius: 4px;
+    background-color: lightgrey;
+  }
