@@ -1,8 +1,6 @@
 name: Deploy Docker Images
 
-on:
-  push:
-    branches: ['main']
+on: push
 
 jobs:
   build-container:
@@ -27,5 +25,5 @@ jobs:
           with:
             username: ${{ secrets.DOCKER_USER }}
             password: ${{ secrets.DOCKER_PASSWORD }}
-            repository: ${{ secrets.DOCKER_USER }}/wordpress
+            repository: ferranpf/wordpress
             tags: latest, ${{ github.run_number }}
